@@ -5,9 +5,23 @@ import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
+import { initializeApp } from "firebase/app";
 
-const container = document.getElementById('root')!;
+const container = document.getElementById("root")!;
 const root = createRoot(container);
+
+const firebaseConfig = {
+  apiKey: "AIzaSyA-KanmdeE7TIuq1eP_AJvad-zIo_5HWKs",
+  authDomain: "project-react-66.firebaseapp.com",
+  projectId: "project-react-66",
+  storageBucket: "project-react-66.appspot.com",
+  messagingSenderId: "590910815829",
+  appId: "1:590910815829:web:3de1e492ff6a6193631edc",
+  measurementId: "G-RDHE9E0JYH"
+};
+
+const app = initializeApp(firebaseConfig);
+
 
 root.render(
   <React.StrictMode>
