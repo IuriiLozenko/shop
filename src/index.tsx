@@ -6,6 +6,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.css';
 import { initializeApp } from "firebase/app";
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 const container = document.getElementById("root")!;
 const root = createRoot(container);
@@ -20,7 +22,10 @@ const firebaseConfig = {
   measurementId: "G-RDHE9E0JYH"
 };
 
+
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app)
+export const firestore = getFirestore(app)
 
 
 root.render(
