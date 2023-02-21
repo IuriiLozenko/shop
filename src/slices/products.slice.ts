@@ -9,6 +9,7 @@ export interface ProductPhoto {
 }
 
 export interface Product {
+  firebaseId: string;
   id: string;
   name: string;
   price: number;
@@ -21,7 +22,7 @@ export interface ProductsState {
   // Produkty
   data: Product[];
   // TODO: dodanie filtrów
-  // TODO: dodanie sortownania
+  // TODO: dodanie sortowania
 }
 
 const initialState: ProductsState = {
