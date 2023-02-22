@@ -1,6 +1,7 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import productReducer from './../slices/products.slice'
 import appReducer from './../slices/app.slice'
+
 export const store = configureStore({
   reducer: {
     product: productReducer,

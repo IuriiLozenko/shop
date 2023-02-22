@@ -10,7 +10,7 @@ const authServiceDef = () => {
   const signIn = async (
     email: string,
     password: string
-  ): Promise<User | null> => {
+  ): Promise <User | null> => {
     try {
       const authResponse: UserCredential = await signInWithEmailAndPassword(
         auth,
